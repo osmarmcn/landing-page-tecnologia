@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        :root{
+            --primary-color:#302C42;
+            --secondary-color:#B8AFE1;
+            --text-color:#fff;
+            --text-color-secondary:#000;
+        }
+
+        body{
+            background: var(--primary-color);
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        header{
+            display: flex;
+            flex-direction: column;
+            padding: 3rem 4%;
+            min-height: 100vh;
+        }
+
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+
+        .header .img{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header .img img:nth-child(1n){
+            width: 76px;
+        }
+
+        .header nav ul{
+            display: flex;
+            gap: 5rem;
+            list-style: none;
+        }
+
+        .header nav ul li a{
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        .header .btn-header{
+            display: flex;
+            gap: 2rem;
+        }
+
+        .header .btn-header button{
+            padding: 1rem 2.5rem;
+            background: transparent;
+            color: var(--text-color);
+            border: 2px solid var(--text-color);
+            border-radius: 25px;
+            cursor: pointer;
+
+            font-weight: 300;
+        }
+
+        .header .btn-header button:nth-child(2n){
+            background: linear-gradient(to right, var(--secondary-color), var(--text-color) );
+            color: var(--text-color-secondary);
+            font-weight: bold;
+            border: none;
+            outline: none;
+        }
+
+        .header-content{
+            display: flex;
+            justify-content: space-between;
+
+            margin-top: 10rem;
+            
+
+        }
+
+        .header-content .text{
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 3rem;
+
+            width: 40%;
+        }
+        .header-content .text h1{
+            color: var(--text-color);
+            letter-spacing: .2rem;
+            font-size: 2.5rem;
+        }
+
+        .header-content .text h1 span{
+            color: var(--secondary-color);
+        }
+
+        .header-content .text p{
+            font-size: 1rem;
+            font-weight: 300;
+            color: var(--text-color);
+            line-height: 1.8rem;
+
+           
+        }
+
+        .header-content .text .btn-contetnt{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            gap: 3rem;
+          
+           
+            
+        }
+
+        .header-content .text .btn-contetnt button{
+            padding: 1rem 3.5rem;
+            background: var(--secondary-color);
+            color: var(--text-color-secondary);
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .header-content .text .btn-contetnt ion-icon{
+            font-size: 3rem;
+            color: var(--secondary-color);
+        }
+
+        .header-content .cotent-img img{
+            border-radius: 100px 100px 120px 260px ;
+            -webkit-box-shadow: 2px 3px 5px 22px rgba(0,0,0,0.18);
+            -moz-box-shadow: 2px 3px 5px 22px rgba(0,0,0,0.18);
+            box-shadow: 2px 3px 5px 22px rgba(0,0,0,0.18);
+        }
+
+        .info{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 7rem;
+            background: linear-gradient(to left, #262235, #393354, #262235);
+            padding: 2rem 5%;
+            border-radius: 80px;
+        }
+
+        .info .info-box{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+           padding: 0 1.5rem;
+        }
+
+        .info ion-icon {
+            font-size: 3.5rem;
+            color: var(--secondary-color);
+        }
+
+        .info .box{
+            color: var(--text-color);
+        }
+
+        .info .box p{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .info .box span{
+            font-size: .8rem;
+        }
+
+        .info .loc{
+            border-right: 2px solid var(--secondary-color);
+        }
+
+
+        .info .msg{
+            border-left: 2px solid var(--secondary-color);
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="img">
+                <img src="midia/Frame.png" alt="Logo da empresa">
+                <img src="midia/Frame (1).png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Technolgies</a></li>
+                    <li><a href="">How to</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-header">
+                <button>CONTACT US</button>
+                <button>JOIN HYDRA</button>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="text">
+                <h1> <span>Dive </span>Into The Depths Of <span>Virtual Reality</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore 
+                    nisl tincidunt eget. Lectus mauris eros in vitae .</p>
+
+                <div class="btn-contetnt">
+                     <button>BUILD YOUR WORLD</button>
+                     <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+               
+            </div>
+
+            <div class="cotent-img">
+                <img src="midia/Mask group.png" alt="">
+            </div>
+           
+        </div>
+
+        <div class="info">
+            <div class="info-box loc">
+                <ion-icon name="location-outline"></ion-icon>
+                <div class="box">
+                    <p>Pay Us a Visit</p>
+                    <span>Union St, Seattle, WA 98101, United States</span>
+                </div>
+                
+            </div>
+            <div class="info-box tel">
+                <ion-icon name="call-outline"></ion-icon>
+                <div class="box">
+                    <p>Give Us a Call</p>
+                    <span>(110) 1111-1010</span>
+                </div>
+                
+            </div>
+            <div class="info-box msg">
+                <ion-icon name="mail-outline"></ion-icon>
+                <div class="box">
+                    <p>Send Us a Message</p>
+                    <span>Contact@HydraVTech.com</span>
+                </div>
+                
+            </div>
+        </div>
+        
+    </header>
+    <main id="intro">
+        <section class="introdcao">
+            
+        </section>
+
+    </main>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
