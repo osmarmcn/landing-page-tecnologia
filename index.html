@@ -137,7 +137,7 @@
             
         }
 
-        .header-content .text .btn-contetnt button{
+        .btn-contetnt button{
             padding: 1rem 3.5rem;
             background: var(--secondary-color);
             color: var(--text-color-secondary);
@@ -204,27 +204,217 @@
             border-left: 2px solid var(--secondary-color);
         }
 
-        .intro{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        main{
+            padding: 3rem 4%;
         }
 
-        .intro .intro-content-text .intro-content-img{
+        .introducao{
             display: flex;
+           flex-direction: column;
+            gap: 5rem;
+        }
+
+
+        .intro-title{
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+           
+        }
+
+        .intro-title .intro-content-text h2{
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--text-color);
+        }
+
+      
+
+        .intro-title .intro-content-text .intro-content-img{
+            display: flex;
+            justify-content: center;
             align-items: center;
             gap: 2rem;
         }
 
-        .intro .intro-content{
+        .intro-title .intro-content-text .intro-content-img span{
+            font-size: 2rem;
+            font-weight: 300;
+            color: var(--secondary-color);
+
+        }
+
+        .intro-title .intro-text {
             width: 50%;
         }
 
-        .intro .intro-content p{
-            text-align: justify;
+        .intro-title .intro-text p{
+            color: var(--text-color);
         }
 
         
+
+        .about{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .about .about-text{
+            width: 50%;
+        }
+
+        .about .about-text h2{
+            font-size: 2.5rem;
+            color: var(--text-color);
+            font-weight: bold;
+        }
+
+        .about .about-text span{
+            font-size: 2.5rem;
+            color: var(--text-color);
+            font-weight: 300;
+        }
+
+        .about .about-text p{
+            color: var(--text-color);
+            margin: 3rem 0;
+        }
+
+        .card{
+            margin-top: 3rem;
+        }
+
+        .cards{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .cards .box{
+            width: 25%;
+            padding: 2rem 1rem;
+            
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            border-radius: 25px;
+            background: #201e2d;
+
+        }
+
+        .cards .box .img img{
+            border-radius: 50%;
+            -webkit-box-shadow: 2px 3px 5px 22px rgba(0,0,0,0.18);
+            -moz-box-shadow: 2px 3px 5px 22px rgba(0,0,0,0.18);
+            box-shadow: 2px 3px 5px 22px rgba(0,0,0,0.18);
+        }
+
+        .cards .box .box-title{
+            text-align: center;
+            color: var(--text-color);
+            
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .cards .box .box-title h4{
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .cards .box .box-title p{
+            font-size: .8rem;
+            text-align: start;
+            font-weight: 300;
+        }
+
+        
+
+        .cards .box .box-btn{
+            margin: 1rem 0;
+            text-align: center;
+        }
+
+        .cards .box .box-btn button{
+            width: 50%;
+            padding: .6rem 1rem;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+
+            cursor: pointer;
+            background: linear-gradient(to right, #8c82ba, #b5acdd);
+
+            font-weight: bold;
+            color: var(--text-color-secondary);
+        }
+
+        .imagem{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4rem;
+
+            margin: 5rem;
+           ;
+           
+        }
+
+        .imagem .img{
+            position: relative;
+        }
+
+        .imagem .img .img-text{
+            text-align: center;
+            color: var(--text-color);
+            position: absolute;
+            top: 100px;
+            left: 400px;
+
+           
+        }
+        
+        .imagem .img .img-text h3{
+            font-size: 2rem;
+        }
+
+        .imagem .img .img-text p{
+            font-size: 2rem;
+            font-weight: 400;
+            color: var(--secondary-color);
+
+        }
+
+        .imagem .card-img{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 5rem;
+        }
+
+        .number{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8rem;
+        }
+
+        .ball-box .num{
+            border-radius: 50%;
+            padding: 3rem;
+            background: white;
+
+        }
+
     </style>
 
 </head>
@@ -298,33 +488,231 @@
         
     </header>
     <main id="intro">
-        <section class="introdcao">
-            <div class="intro">
+        <section class="introducao">
+
+            <div class="intro-title">
                
                 <div class="intro-content-text">
                      <h2>INTRODUCTION</h2>
                      <div class="intro-content-img">
                         <span>TO HYDRA VR</span>
                         <img src="midia/Component 1.png" alt="">
-                     </div>
-                     
+                     </div> 
                 </div>
 
-                <div class="intro-content">
-                    <p>Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
+                <div class="intro-text">
+                    <p>
+                        Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
                         nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
                         quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
                         lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
                     </p>
                 </div>
-
             </div>
 
             <div class="about">
-               
+                <div class="about-img">
+                    <img src="midia/Mask group (1).png" alt="">
+                </div>
+
+                <div class="about-text">
+                    <h2>ABOUT</h2>
+                    <span>HYDRA VR</span>
+
+                    <p>Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus 
+                        urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida 
+                        dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. 
+                        Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet 
+                        sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam 
+                        etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet 
+                        cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha
+                        retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi
+                        n tempor.
+                    </p>
+
+                    
+                    <div class="btn-contetnt">
+                        <button>LET’S GET IN TOUCH</button>
+                    </div>
+
+                </div>
             </div>
             
         </section>
+
+        <section class="card">
+
+            <div class="intro-title">
+               
+                <div class="intro-content-text">
+                     <h2>WHY BUILD</h2>
+                     <div class="intro-content-img">
+                        <span>WITH HYDRA?</span>
+                        <img src="midia/Component 1.png" alt="">
+                     </div> 
+                </div>
+
+                <div class="intro-text">
+                    <p>
+                        Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
+                        nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
+                        quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
+                        lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+                    </p>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="box">
+                    <div class="img">
+                        <img src="midia/Mask group (5).png" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-title">
+                            <h4>SIMULATION</h4>
+                            <p>Vitae sapien pellentesque habitant morbi
+                            nunc. Viverra aliquet  porttitor rhoncus 
+                            libero justo laoreet sit amet vitae.</p>
+                        </div>
+                        
+                        
+                        <div class="box-btn">
+                             <button class="btn-box">TRY IT NOW</button>
+                        </div>
+                    </div>
+                       
+                </div>
+
+                <div class="box">
+                    <div class="img">
+                        <img src="midia/Mask group (4).png" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-title">
+                            <h4>SIMULATION</h4>
+                             <p>Vitae sapien pellentesque habitant morbi
+                            nunc. Viverra aliquet  porttitor rhoncus 
+                            libero justo laoreet sit amet vitae.</p>
+                        
+                        </div>
+                       
+                        <div class="box-btn">
+                             <button class="btn-box">TRY IT NOW</button>
+                        </div>
+                    </div>
+                       
+                </div>
+
+                <div class="box">
+                    <div class="img">
+                        <img src="midia/Mask group (3).png" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-title">
+                            <h4>SIMULATION</h4>
+
+                            <p>Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet  porttitor rhoncus 
+                            libero justo laoreet sit amet vitae.</p>
+                        </div>
+                       
+                        
+                        <div class="box-btn">
+                             <button class="btn-box">TRY IT NOW</button>
+                        </div>
+                    </div>
+                       
+                </div>
+
+                <div class="box">
+                    <div class="img">
+                        <img src="midia/Mask group (2).png" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-title">
+                            <h4>SIMULATION</h4>
+                            <p>Vitae sapien pellentesque habitant morbi
+                            nunc. Viverra aliquet  porttitor rhoncus 
+                            libero justo laoreet sit amet vitae.</p>
+                        
+                        </div>
+                        
+                        <div class="box-btn">
+                             <button class="btn-box">TRY IT NOW</button>
+                        </div>
+                    </div>
+                       
+                </div>
+            </div>
+            
+
+        </section>
+
+        <section class="imagem">
+            <div class="img">
+                <img src="midia/Mask group (6).png" alt="">
+                <div class="img-text">
+                    <h3>TECHNOLOGIES & HARDWARE </h3>
+                    <p>USED BY HYDRA VR.</p>
+                </div>
+                
+            </div>
+
+            <div class="card-img">
+                <div class="box-img">
+                    <img src="midia/Hydra-Tech1 1.png" alt="">
+                </div>
+
+                <div class="box-img">
+                    <img src="midia/Hydra-Tech2 1.png" alt="">
+                </div>
+
+                <div class="box-img">
+                    <img src="midia/Hydra-Tech3 1.png" alt="">
+                </div>
+
+                <div class="box-img">
+                    <img src="midia/Hydra-Tech4 1.png" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <seciton class="number">
+            <div class="intro-title">
+               
+                <div class="intro-content-text">
+                     <h2>HOW WE BUILD</h2>
+                     <div class="intro-content-img">
+                        <span>WITH HYDRA VR?</span>
+                        <img src="midia/Component 1.png" alt="">
+                     </div> 
+                </div>
+
+                <div class="intro-text">
+                    <p>
+                        Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
+                        nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
+                        quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
+                        lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+                    </p>
+                </div>
+            </div>
+
+            <div class="img-ball">
+                <img src="midia/Vector 15.png" alt="">
+
+                <div class="ball-box">
+                    <div class="num">
+                        <span>01</span>
+                    </div>
+
+                    <div class="ball-content">
+                        <img src="midia/arrow-small-right.png" alt="">
+                        <p>3D Conception & Design</p>
+                    </div>
+                </div>
+            </div>
+        </seciton>
 
     </main>
 
